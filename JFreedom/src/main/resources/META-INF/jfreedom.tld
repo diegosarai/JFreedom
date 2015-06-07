@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+ 
+ <tlib-version>1.0</tlib-version>
+ <short-name>jfreedom</short-name>
+ <uri>http://jfreedom.web</uri>
+ 	
+<tag>
+	<name>messages</name>
+	<tag-class>br.web.jfreedom.tags.MessagesTag</tag-class>
+	<body-content>JSP</body-content>
+	
+	<attribute>
+		<name>messageClass</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+<tag>
+	<name>message</name>
+	<tag-class>br.web.jfreedom.tags.MessageTag</tag-class>
+	<body-content>JSP</body-content>
+	
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>messageClass</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+ 
+</taglib>

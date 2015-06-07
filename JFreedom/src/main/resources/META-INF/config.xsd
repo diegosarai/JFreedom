@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://ufscar.tcc.framework" 
+elementFormDefault="qualified">
+
+<element name="config">
+	
+	<complexType>
+		<sequence>
+			
+			<element name="mapping" maxOccurs="1">
+				
+				<complexType>
+					<sequence>
+					
+						<element name="class" minOccurs="0"></element>
+
+						<element name="message-config" minOccurs="0">
+							
+							<complexType>
+								
+								<sequence>
+									
+									<element name="path" minOccurs="1" maxOccurs="1"></element>
+									<element name="var" minOccurs="1" maxOccurs="1"></element>
+								
+								</sequence>
+							
+							</complexType>
+						
+						</element>
+
+						
+					</sequence>
+				</complexType>
+			
+			</element>
+			
+		</sequence>
+	</complexType>
+	
+</element>
+
+</schema>
